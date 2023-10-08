@@ -14,7 +14,7 @@ namespace Class_task1.Models
         [RegularExpression(@"^[A-Za-z\s\.,\-]+$", ErrorMessage = "Name must only contain letters, spaces, dots, commas, and dashes.")]        public string Name { get; set; }
 
         [Required(ErrorMessage = "Username is required")]
-        [RegularExpression(@"^[0-9A-Za-z_-]{4,18}$", ErrorMessage = "Username must be between 4 and 18 characters and can only contain numbers, letters, hyphens, and underscores.")]
+        [RegularExpression(@"^[0-9A-Za-z_-]{4,12}$", ErrorMessage = "Username must be between 4 and 12 characters and can only contain numbers, letters, hyphens, and underscores.")]
         public string Username { get; set; }
 
         [Required(ErrorMessage = "Id is required")]
